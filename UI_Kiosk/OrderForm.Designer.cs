@@ -31,7 +31,6 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.deleteButton = new System.Windows.Forms.Button();
             this.deleteAllButton = new System.Windows.Forms.Button();
-            this.addButton_10 = new System.Windows.Forms.Button();
             this.checkPrice = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.purchaseButton = new System.Windows.Forms.Button();
@@ -67,15 +66,6 @@
             this.deleteAllButton.UseVisualStyleBackColor = true;
             this.deleteAllButton.Click += new System.EventHandler(this.deleteAllButton_Click);
             // 
-            // addButton_10
-            // 
-            this.addButton_10.Location = new System.Drawing.Point(229, 220);
-            this.addButton_10.Name = "addButton_10";
-            this.addButton_10.Size = new System.Drawing.Size(103, 23);
-            this.addButton_10.TabIndex = 9;
-            this.addButton_10.Text = "10개 추가 버튼";
-            this.addButton_10.UseVisualStyleBackColor = true;
-            // 
             // checkPrice
             // 
             this.checkPrice.Location = new System.Drawing.Point(487, 226);
@@ -89,7 +79,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(365, 231);
+            this.label2.Location = new System.Drawing.Point(367, 197);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(97, 12);
             this.label2.TabIndex = 14;
@@ -123,7 +113,6 @@
             this.Controls.Add(this.purchaseButton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.checkPrice);
-            this.Controls.Add(this.addButton_10);
             this.Controls.Add(this.deleteAllButton);
             this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.listBox1);
@@ -138,7 +127,6 @@
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button deleteButton;
         private System.Windows.Forms.Button deleteAllButton;
-        private System.Windows.Forms.Button addButton_10;
         private System.Windows.Forms.Button checkPrice;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button purchaseButton;

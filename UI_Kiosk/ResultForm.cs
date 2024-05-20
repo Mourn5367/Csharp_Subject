@@ -31,6 +31,8 @@ namespace UI_Kiosk
             Close();
         }
 
+
+        // ResultForm이 닫길때 실행되는 함수 PurchaseForm 까지 닫기게 한다.
         private void ResultForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             purchase.closePurchaseForm();
