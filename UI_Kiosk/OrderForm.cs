@@ -25,6 +25,7 @@ namespace UI_Kiosk
         public OrderForm() // 생성자
         {
             InitializeComponent();
+            Text = "OrderForm";
             menuList = new string[][] // 첫번째는 메뉴명, 두번째는 가격, 세번째는 설명
             {
                 new string[menus*3], 
@@ -110,9 +111,9 @@ namespace UI_Kiosk
         public void detectMenuCount()
         {
             int detected = 0;
-            int detected5 = 0;
+            int detectedSet = 0;
             int findMenuIndex = 0;
-            int findMenuIndex5 = 0;
+            int findMenuIndexSet = 0;
             for (int i = 0; i <  menus; i++)
             {
                 int equalCount = 0;
@@ -155,7 +156,7 @@ namespace UI_Kiosk
             for (int i = menus; i < menus * 2; i++)
             {
                 int equalCount = 0;
-                if (detected5 != 0)
+                if (detectedSet != 0)
                 {
                     break;
                 }
@@ -167,19 +168,19 @@ namespace UI_Kiosk
                         equalCount++;
                         if (equalCount >= 2)
                         {
-                            detected5++;
-                            findMenuIndex5 = i;
+                            detectedSet++;
+                            findMenuIndexSet = i;
                         }
                     }
                 }
             }
 
-            if (detected5 >= 1)
+            if (detectedSet >= 1)
             {
-                listBox1.Items.Add(menuList[0][findMenuIndex5 + menus]);
+                listBox1.Items.Add(menuList[0][findMenuIndexSet + menus]);
                 for (int i = 0; i < 2; i++)
                 {
-                    listBox1.Items.Remove(menuList[0][findMenuIndex5]);
+                    listBox1.Items.Remove(menuList[0][findMenuIndexSet]);
                 }
             }
         }
