@@ -91,35 +91,35 @@ namespace UI_Kiosk
 
                 }
             }
-            bill.Text = bills.ToString() + " 원";
+            bill.Text = "청구 금액 : " + bills.ToString() + " 원";
         }
 
         private void input_1000_Click(object sender, EventArgs e)
         {
             input += 1000;
 
-            inputMoney.Text = input.ToString() + " 원";
+            inputMoney.Text = "투입 금액 : " + input.ToString() + " 원";
         }
 
         private void input_5000_Click(object sender, EventArgs e)
         {
             input += 5000;
 
-            inputMoney.Text = input.ToString() + " 원";
+            inputMoney.Text = "투입 금액 : " + input.ToString() + " 원";
         }
 
         private void input_10000_Click(object sender, EventArgs e)
         {
             input += 10000;
 
-            inputMoney.Text = input.ToString() + " 원";
+            inputMoney.Text = "투입 금액 : " + input.ToString() + " 원";
         }
 
         // 투입금액 초기화
         private void resetMoney_Click(object sender, EventArgs e)
         {
             input = 0;
-            inputMoney.Text = input.ToString() + " 원";
+            inputMoney.Text = "투입 금액 : " + input.ToString() + " 원";
         }
 
         // 결제하기 버튼 클릭 이벤트시 작동하는 함수 투입금액이 주문금액 보다 크다면 새 창을 연다.

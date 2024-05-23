@@ -65,9 +65,9 @@
             this.inputMoney.AutoSize = true;
             this.inputMoney.Location = new System.Drawing.Point(280, 355);
             this.inputMoney.Name = "inputMoney";
-            this.inputMoney.Size = new System.Drawing.Size(69, 12);
+            this.inputMoney.Size = new System.Drawing.Size(91, 12);
             this.inputMoney.TabIndex = 2;
-            this.inputMoney.Text = "투입 금액 : ";
+            this.inputMoney.Text = "투입 금액 : 0 원";
             // 
             // input_1000
             // 
@@ -105,7 +105,7 @@
             this.resetMoney.Name = "resetMoney";
             this.resetMoney.Size = new System.Drawing.Size(120, 23);
             this.resetMoney.TabIndex = 6;
-            this.resetMoney.Text = "아 잘못넣었다";
+            this.resetMoney.Text = "금액 초기화 하기";
             this.resetMoney.UseVisualStyleBackColor = true;
             this.resetMoney.Click += new System.EventHandler(this.resetMoney_Click);
             // 
@@ -135,7 +135,7 @@
             this.undo_Button.Name = "undo_Button";
             this.undo_Button.Size = new System.Drawing.Size(75, 23);
             this.undo_Button.TabIndex = 9;
-            this.undo_Button.Text = "아맞다";
+            this.undo_Button.Text = "되돌리기";
             this.undo_Button.UseVisualStyleBackColor = true;
             this.undo_Button.Click += new System.EventHandler(this.undo_Button_Click);
             // 
