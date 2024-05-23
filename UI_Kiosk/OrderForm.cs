@@ -215,6 +215,7 @@ namespace UI_Kiosk
         //결제까지 다 끝난후 주문상태를 초기화 하는 함수
         public void clearListBox()
         {
+            menuText = "";
             labels[0].Text = selText;
             labels[1].Text = "설명";
             label2.Text = selPrice;
